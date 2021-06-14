@@ -1,0 +1,92 @@
+body{
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: lightgray;
+
+}
+
+#box-container{
+    background-color:cadetblue;
+    padding:10px;
+    border:black solid 2px;
+    width:400px;
+    height:700px;
+    color:lightgray;
+    
+}
+
+#one{
+    border-bottom: black solid 10px;
+    padding:5px 0;
+}
+
+#one :first-child{
+    font-size:40px;
+}
+
+#two{
+    display:flex;
+    justify-content:flex-end;
+    font-size:12px;
+    padding:5px 0;
+}
+
+#three{
+    display:flex;
+    justify-content: space-between;
+    border-bottom: black solid 1px;
+    padding:5px 0;
+}
+
+ #three :nth-child(2){
+    width:100px;
+} 
+
+#four{
+    display:flex;
+    justify-content: space-between;
+    padding:5px 0;
+    
+}
+#four :nth-child(2){
+    width:180px;
+} 
+
+#five{
+    display:flex;
+    justify-content:flex-end;
+    border-bottom: black solid 6px;
+    padding:5px 0;
+}
+#five :nth-child(1){
+    border-top: rgb(158, 158, 158) solid 3px;
+    padding-top:5px; 
+} 
+#five :nth-child(2){
+    width: 170px;
+    border-top: rgb(158, 158, 158) solid 3px;
+} 
+#five :nth-child(3){
+    border-top: rgb(158, 158, 158) solid 3px;
+    padding-top:5px; 
+}
+#five :nth-child(4){
+    width: 50px;
+    border-top: rgb(158, 158, 158) solid 3px;    
+} 
+#five :nth-child(5){
+    border-top: rgb(158, 158, 158) solid 3px;
+    padding-top:5px;    
+} 
+
+
+
