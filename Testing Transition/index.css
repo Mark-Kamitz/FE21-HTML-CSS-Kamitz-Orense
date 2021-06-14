@@ -1,106 +1,145 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    height: 100vh;
-    min-width: 1080px;
-    background: #eee;
-    margin:20px;
-  }
-
-  #header{
-    display: flex;
-    flex-grow:1;
-    flex-flow:row;
-    justify-content: center;
-    font-size:2em;
-    text-decoration-line:underline;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
-    nav {
-        display: flex;
-        flex-flow:row;
-        justify-content: center;
-        justify-content:space-between;
+
+body {
+height: 100vh;
+min-width: 1080px;
+background: #eee;
+margin:20px;
+}
+
+#header{
+display: flex;
+flex-grow:1;
+flex-flow:row;
+justify-content: center;
+font-size:2em;
+text-decoration-line:underline;
+}
+nav {
+    display: flex;
+    flex-flow:row;
+    justify-content:space-between;
+}
+
+
+/* --- BUtton Styling --- */
+
+.btn {
+width: 150px;
+height: 50px;
+border: 1px solid #333;
+display: flex;
+align-items: center;
+justify-content: center;
+position: relative;
+z-index: 0;
+transition: 1s;
+cursor: pointer;
+font-family: 'Cinzel', serif;
+font-size: 20px;
+margin-top:30px;
+-webkit-tap-highlight-color: transparent;
+}
+
+.btn::before, .btn::after {
+position: absolute;
+background:#eee;
+z-index: -1;
+transition: 1s;
+content: '';
+}
+
+.btn::before {
+/* background-color:bisque; */
+width: 130px;
+height: 50px;
+}
+
+.btn::after {
+/* background-color:rgb(198, 255, 196); */
+width: 150px;
+height: 30px;
+}
+
+.btn:hover::before {
+width: 0px;
+background: #fff;
+}
+
+.btn:hover::after {
+height: 0px;
+background: #fff;
+}
+
+.btn:hover {
+background: #fff;
+}
+
+a{
+    text-decoration:none;
+    color:black;
+}  
+
+.template a:hover{
+    text-decoration-line:underline; 
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
     }
 
+/* --- container ---*/
 
-  /* --- BUtton | NAV styling --- */
-
-  .btn {
+#container{
+    background-color: white;
+    border:#333 solid 1px;
+    height:100%;
+    display:flex;
+    flex-flow: column;
     margin-top:30px;
-    width: 150px;
-    height: 50px;
-    border: 1px solid #333;
-    font-family: 'Cinzel', serif;
-    font-size: 20px;
-    cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    z-index: 0;
-    transition: 1s;
-  }
-  
-  .btn::before, .btn::after {
-    position: absolute;
-    background:#eee;
-    z-index: -5;
-    transition: 1s;
-    content: '';
-  }
-  
-  .btn::before {
-    height: 50px;
-    width: 130px;
-  }
-  
-  .btn::after {
-    width: 150px;
-    height: 30px;
-  }
-  
-  .noselect {
-    -webkit-touch-callout: none;
-      -webkit-user-select: none;
-       -khtml-user-select: none;
-         -moz-user-select: none;
-          -ms-user-select: none;
-              user-select: none;
-  }
+    padding:20px;
+    flex-flow: column;
+}
 
-  a{
-      text-decoration:none;
-      color:black;
-  }
-  
-  .btn:hover::before {
-    width: 0px;
-    background: #fff;
-  }
-  
-  .btn:hover::after {
-    height: 0px;
-    background: #fff;
-  }
-  
-  .btn:hover {
-    background: #fff;
-  }
+.template{
+    background-color: #EEEEEE;
+    width:100%;
+    border:rgb(153, 153, 153) solid 1px;
+    height:100px;
+    display:flex;
+    -webkit-box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.46); 
+    box-shadow: 5px 5px 8px -2px rgba(0,0,0,0.46);
+    margin-top:20px;
+    padding:20px
+}
 
-  /* --- container ---*/
+#link{
+    padding:20px;
+    
+    border-right: rgb(82, 87, 117) solid 1px;
+}
+#link a{
+    color: cadetblue;
+}
+#description{
+    padding:20px;
+    
+}
 
-  #container{
-      background-color: white;
-      border:#333 solid 1px;
-      height:100%;
-      display:flex;
-      margin-top:20px;
-  }
+#description a{
+    color:black;
+}
+
+  
   
   
   
