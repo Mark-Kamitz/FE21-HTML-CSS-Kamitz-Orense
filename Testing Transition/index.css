@@ -72,6 +72,11 @@
           -ms-user-select: none;
               user-select: none;
   }
+
+  a{
+      text-decoration:none;
+      color:black;
+  }
   
   .btn:hover::before {
     width: 0px;
