@@ -7,16 +7,20 @@
   body {
     height: 100vh;
     background: #eee;
-    display: flex;
-    flex-flow:row;
-
-    margin:20px;
+     margin:20px;
   }
 
   #header{
     display: flex;
     flex-grow:1;
+    flex-flow:row;
+    justify-content: center;
+    font-size:2em;
 }
+    nav {
+        display: flex;
+        flex-flow:row;
+    }
 
 
   /* --- BUtton | NAV styling --- */
@@ -80,6 +84,7 @@
     background: #fff;
   }
 
+  /* --- container ---*/
   
   
   
