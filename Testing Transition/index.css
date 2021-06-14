@@ -6,8 +6,9 @@
   
   body {
     height: 100vh;
+    min-width: 1080px;
     background: #eee;
-     margin:20px;
+    margin:20px;
   }
 
   #header{
@@ -16,10 +17,13 @@
     flex-flow:row;
     justify-content: center;
     font-size:2em;
+    text-decoration-line:underline;
 }
     nav {
         display: flex;
         flex-flow:row;
+        justify-content: center;
+        justify-content:space-between;
     }
 
 
@@ -27,7 +31,6 @@
 
   .btn {
     margin-top:30px;
-    margin-left:20px;
     width: 150px;
     height: 50px;
     border: 1px solid #333;
@@ -85,6 +88,14 @@
   }
 
   /* --- container ---*/
+
+  #container{
+      background-color: white;
+      border:#333 solid 1px;
+      height:100%;
+      display:flex;
+      margin-top:20px;
+  }
   
   
   
